@@ -1,0 +1,7 @@
+# Options to spamd
+# Options to spamd
+SAHOME="{{ spamfilter_home}} "
+SPID_DIR="/var/run/spamassassin"
+SUSER="spamfilter"
+SPAMDOPTIONS="-d -c -m5 --username ${SUSER} -H ${SAHOME} -s ${SAHOME}/spamfilter.log"
+

@@ -1,0 +1,10 @@
+{% set map = salt['grains.filter_by']({
+    'RedHat': {
+        'dovecot_config': '/etc/dovecot/dovecot.conf',
+        'dovecot_conf_dir': '/etc/dovecot/conf.d',
+        'postfix_main_config': '/etc/postfix/main.cf',
+        'postfix_master_config': '/etc/postfix/master.cf',
+        'spamassassin_config': '/etc/mail/spamassassin/local.cf',
+        'services': ['postfix', 'dovecot','spamassassin'], 
+    },
+}, merge=salt['pillar.get']('mail')) %}
