@@ -22,12 +22,5 @@
     openssl x509 -in server.csr -out server.crt -req -signkey server.key -days 3650
     
     ```
-    
-    ### credits 
-    
-    https://certbot.eff.org      
-    
-    https://www.server-world.info/en/note?os=CentOS_7&p=mail&f=4 
-    
-    https://elprespufferfish.net/blog/aws,mail/2015/09/03/mail-server-ec2.html 
+   
     
