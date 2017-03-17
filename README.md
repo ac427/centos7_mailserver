@@ -8,7 +8,7 @@
  
  ```
  - Setup A and MX records on route53 
- - open inbound ports for mail (995+993+25+465)
+ - open inbound ports for mail (995+993+25+465) in AWS security groups & also any firewalls you are running 
  - get free cert from certbot or create self signed 
 
    ```
