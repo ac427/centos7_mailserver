@@ -86,3 +86,23 @@ postfix_master_config:
     - user: root
     - group: root
 
+reload postfix:
+  service.running:
+    - name: postfix
+    - reload: True
+    - watch:
+      - file: /etc/postfix/*.cf
+
+reload dovecot:
+  service.running:
+    - name: dovecot
+    - reload: True
+    - watch:
+      - file: /etc/dovecot/conf.d/*.conf
+
+reload spamassassin:
+  service.running:
+    - name: postfix
+    - reload: True
+    - watch:
+      - file: /etc/mail/spamassassin/*.cf
