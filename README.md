@@ -5,6 +5,7 @@
  ```
  # for setting route53
  https://elprespufferfish.net/blog/aws,mail/2015/09/03/mail-server-ec2.html
+ 
  ```
  - Setup A and MX records on route53 
  - open inbound ports for mail (995+993+25+465)
@@ -23,8 +24,10 @@
     ```
     
     ### credits 
-    https://www.server-world.info/en/note?os=CentOS_7&p=mail&f=4
-    https://elprespufferfish.net/blog/aws,mail/2015/09/03/mail-server-ec2.html
-    https://certbot.eff.org/
-
+    
+    https://certbot.eff.org      
+    
+    https://www.server-world.info/en/note?os=CentOS_7&p=mail&f=4 
+    
+    https://elprespufferfish.net/blog/aws,mail/2015/09/03/mail-server-ec2.html 
     
