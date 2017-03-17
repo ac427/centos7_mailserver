@@ -1,7 +1,7 @@
 # centos7_mailserver (postfix+dovecot+spamassassin)
 
 ### Below are my steps I ran to test on AWS
- - Purchase domain name ( $12/yer + elastic ip + ec2)
+ - Purchase domain name ( $12/year + elastic ip + ec2)
  ```
  # for setting route53
  https://elprespufferfish.net/blog/aws,mail/2015/09/03/mail-server-ec2.html
