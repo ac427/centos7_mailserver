@@ -54,7 +54,7 @@ postfix_master_config:
     - user: root
     - group: root
 
-{{ map.dovecot_conf_dir }}/10-map.conf:
+{{ map.dovecot_conf_dir }}/10-mail.conf:
   file.managed:
     - source: salt://mail/files/etc/dovecot/conf.d/10-mail.conf
     - mode: 644

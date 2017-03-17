@@ -1,10 +1,9 @@
 ssl_key: /etc/pki/tls/certs/example/server.key
 ssl_cert: /etc/pki/tls/certs/example/server.crt
 domain: example.com
-hostname: mail
+hostname: mail.example.com
 packages:
-  - epel
-  - vim
+  - epel-release
   - wget
   - bind-utils
   - screen
