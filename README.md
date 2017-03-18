@@ -9,7 +9,7 @@
  ```
  - Setup A and MX records on route53 
  - open inbound ports for mail (995+993+25+465) in AWS security groups & also any firewalls you are running 
- - get free cert from certbot or create self signed 
+ - get free cert from certbot or create self signed or verisign
 
    ```
    # Steps to create cert and self sign
@@ -22,5 +22,3 @@
     openssl x509 -in server.csr -out server.crt -req -signkey server.key -days 3650
     
     ```
-   
-    
